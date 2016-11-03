@@ -1,0 +1,126 @@
+####################################################################################################
+#Particle System Console Commands
+
+
+Press "~" to open or close the console. Look below for examples.
+
+/ps command container emitter(optional) arguments
+
+
+
+####################################################################################################
+####################################################################################################
+#Available Console Commands
+
+
+help
+	-This provides a list of commands as well as instructions for using the system. 
+	 It is currently outdated as was able to impliment a few more commands after classes in my spare time.
+
+list_active 
+	-This lists the Containers contained in the RunningList. Again, these are the containers 
+	 visible in the game world and not in the factory. You can see where they are located and 
+	 how many emitters they contain by a image I created
+
+
+list_factory 
+	-In the case you forget the names or the particles you've created, 
+	 you can call this to display the names of the particles loaded from XML.
+
+spawn/load 
+	-This will take a container from the factory, duplicate it and insert it into the running containers.
+
+activate/run
+	-By default, containers remain dormant until told to begin running. 
+	 You can have the container run as a whole, or call on a specific Emitter instead. 
+	 (IE: I have Fire ready, but only want to see Sparks updating and rendering.)
+
+deactivate/end
+	-Same as above, but for deactivation. 
+
+containerPosition/containerLocation/cloc/cpos
+	-Changes to position of the emitter. This does NOT save to XML.
+
+positionx/posx/positiony/posy/positionz/posz
+	-Changes the starting position of the particles. 
+	 Takes two numbers. Min and Max. 
+	 A random position is made between them. This is emitter level only.
+
+velocityx/velx/velocityy/vely/velocityz/velz
+	-Same as position.
+
+rate
+	-Changes the spawn over X time rate.
+	 Takes two numbers. Number/time
+
+image/texture
+	-Changes the texture of the container or emitter.
+ 	 If the spriteCountTotal, 
+	 spriteCountX, and spriteCountY are given, the system assumes the particles are now animated.
+
+life
+	-Changes the lifespan of the particles.
+
+color
+	-changes the color of the particles:
+
+export
+	-Takes the name of the container and saves it as the new filename.
+
+
+
+
+
+####################################################################################################
+####################################################################################################
+#Example Syntax
+
+/ps load Fire
+   	-Loads the "Fire" container from Factory and places it in the world.
+
+
+/ps run Fire
+	-Runs the "Fire" container and all of it's emitters.
+
+
+/ps run Fire Smoke
+	-Runs the "Smoke" emitter within "Fire" only.
+
+
+/ps run all
+	-Runs all Containers and Emitters
+
+
+(Assume Fire and all emitters are running)
+/ps end Fire Smoke
+	-Stops the updating and rendering of "Smoke" within "Fire" but leaves the other emitters running.
+
+
+/ps posx Fire Smoke 10 -10
+	-Changes the random position of "Smoke" particles within "Fire" to be between 10 and -10
+
+
+/ps image Fire snowflake.png
+	-Changes the container image to a static image
+
+
+/ps image Fire Smoke snowflakeAnimated.png 8 4 2
+	-Sets the "Smoke" emitters texture within "Fire" to an animated image with 8 total sprites. 4 columns, 2 rows
+
+
+/ps rate Fire Smoke 1000 10
+	-Change the "Smoke" emitter within "Fire" to emit 1000 particles evenly over 10 seconds
+
+
+/ps export Fire NewFire
+	Takes the "Fire" container(edited or not) and creates a new file "NewFire" with it's current data
+
+
+/ps export Fire Fire
+	Takes the "Fire" container(edited or not) and overwrites the file with the "Fire"s current data
+
+
+/ps color Fire Smoke 0 0 255
+	-Change the color or the "Smoke" particles within Fire to blue.
+
+ 

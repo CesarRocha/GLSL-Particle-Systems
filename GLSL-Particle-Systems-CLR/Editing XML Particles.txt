@@ -1,0 +1,181 @@
+####################################################################################################
+#Editing XML Particles
+
+
+The xml code below shows an example of a container with all the data available for text edits.
+For the pieces of data containing a ~, the system will randomize a number between the two entries.
+
+Look furthur down for a list of data entries and what they do.
+
+
+####################################################################################################
+####################################################################################################
+#EXAMPLE CODE
+
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="GLSL Particle Systems">
+
+  <Container 
+  	name="EXAMPLE_PARTICLE" 
+  	texture="./data/images/AnimatedExplosionBW.png" 
+  	spriteCountTotal="49" 
+  	spriteCountX="7" 
+  	spriteCountY="7">
+
+		<Emitter>
+			<BasicData 
+				name		="Snow1" 
+				texture		="./data/images/snowflake.png" 
+				spriteCountTotal="1" 
+				spriteCountX	="1" 
+				spriteCountY	="1" 
+				animated	="FALSE" 
+				spriteLocation	="5, 3"/>
+
+			<VertData 	
+				size     	="1.000000 ~ 5.000000"
+				color		="64, 64, 100, 255"
+				positionX	="100.000000 ~ -100.000000"
+				positionY	="100.000000 ~ -100.000000"
+				positionZ	="100.000000 ~ 100.000000"
+				velocityX	="0.000000 ~ 0.000000"
+				velocityY	="0.100000 ~ 0.200000"
+				velocityZ	="0.000000 ~ -0.250000"
+				orientationX	="1.000000 ~ -1.000000"
+				orientationY	="1.000000 ~ -1.000000"
+				orientationZ	="0.000000 ~ 0.000000"
+				normalizeVelocity="false"/>
+
+			<SpawnRules 
+				initialCount	="0" 
+				loop		="FALSE" 
+				renderDelay	="0.000000" 
+				lifespan	="10.000000" 
+				fadeTime	="3.000000" 
+				pawnRate	="10000.000000 ~ 10.000000" 
+				spawnRateLoop	="TRUE"/>
+
+			<RenderingRules 
+				GLType		="ADDITIVE"/>
+		</Emitter>
+		
+	</Container>
+</Project>
+
+
+
+
+####################################################################################################
+####################################################################################################
+#AVAILABLE ENTRIES
+
+##Container-Level:
+
+name 
+	-All containers have a name. This is to identify the particle object as a whole. "Fire"
+
+
+texture 
+	-This is the primary texture that all emitters will default on if the containers emitters do not have a texture of their own.
+
+
+spriteCountTotal/ spriteCountX/ spriteCountY
+	-These are the pieces of data nessecary if a texture is used as a sprite sheet.
+
+
+
+
+
+##Emitter-Level:
+
+
+#####BasicData: 
+
+name	
+	-This is the name of the emitter. "Smoke". Means that now "Smoke" is part of a group of 
+	 emitters in the container "Fire." 
+
+
+texture
+	-If you do not want the emitter to use the containers texture, you can specify which texture to use here.
+
+
+spriteCountTotal/ spriteCountX /spriteCountY
+	-Same as the container.
+animated: Some emitters container particles that are 
+ 	animated. (A snowflake vs a fluttering butterfly) This lets emitter know if it 
+	needs to make use of the Animation System to update UV data.
+
+
+spriteLocation
+	-If the particles in the emitter are not animated; you can specify the X,Y 
+	 position of the sprite you want to use if the texture you are using 
+	 (container or emitter level) is a sprite sheet.
+
+
+
+#####VertData: 
+
+size
+	-Specifies the particle size. Changes the overall size of the quad.
+
+
+color
+	-Sets the color. Useful for black and white images that use ADDITIVE blending.
+
+
+positionX/positionY /positionZ
+	-This data takes two floats separated by a ~. This randomizes the starting 
+ 	 position of the particle between these numbers.
+
+
+velocityX/ velocityY/ velocityZ
+	-Same with velocity.
+
+
+orientationX/ orientationY/ orientationZ
+	-And orientation.
+
+
+normalizeVelocity: Tells the system to normalize the velocity.
+
+
+
+#####SpawnRules:
+
+initialCount
+	-This spawns X amount of particles immediately upon activation.
+
+
+loop
+	-The particles spawned with the initialCount can either play once or repeat indefinitely. 
+
+
+renderDelay
+	-You can tell the renderer to update the particles, but not render until the renderDelay timer has expired.
+
+
+lifespan
+	-Time before the particle stops updating/rendering. 
+
+
+fadeTime
+	-Specify how long before the lifespan to begin fading as to prevent sudden pop out.
+
+
+spawnRate
+	-Two numbers seperated by a ~. This specifies how pant particles to spawn 
+	 over a give time. Example: Spawn 900 particles over 3 seconds.
+
+
+spawnRateLoop
+	-Have the spawnRate particles play once or repeat indefinitely.
+
+
+
+#####RenderingRules:
+
+GLType
+	-At this time, "ADDITIVE" and "NORMAL" are available. This sets the particles
+	 to either use make additive blending or not. This is useful for things like 
+	 the "Fire" where it gets hotter in the center and cooler towards the outside. NORMAL is the default.
