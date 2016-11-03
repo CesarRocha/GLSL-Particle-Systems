@@ -4,6 +4,8 @@
 
 The xml code below shows an example of a container with all the data available for text edits.
 For the pieces of data containing a ~, the system will randomize a number between the two entries.
+If you wish to add another Emitter; you can do so by adding a new node under the Container.
+If you wish to add another Container; you can do so by adding a new node under the Project.
 
 Look furthur down for a list of data entries and what they do.
 
@@ -115,6 +117,7 @@ texture
 
 spriteCountTotal/ spriteCountX /spriteCountY
 	-Same as the container.
+	
 animated: Some emitters container particles that are 
  	animated. (A snowflake vs a fluttering butterfly) This lets emitter know if it 
 	needs to make use of the Animation System to update UV data.
