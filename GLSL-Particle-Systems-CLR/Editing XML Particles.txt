@@ -13,7 +13,10 @@ Look furthur down for a list of data entries and what they do.
 #EXAMPLE CODE
 
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="GLSL Particle Systems">
+<Project 
+	name="GLSL Particle Systems"
+	load ="false"
+	run  ="false">
 
   <Container 
   	name="EXAMPLE_PARTICLE" 
@@ -69,6 +72,16 @@ Look furthur down for a list of data entries and what they do.
 ####################################################################################################
 #AVAILABLE ENTRIES
 
+##Project-level:
+name: Â 
+	-This is just informational and has no effect on the XML parsing during load.
+	
+load
+	-If you do not want to manually load the container via command prompt, you can have the system do so automatically.
+
+run
+	-If you do have it load automatically, you can also have it run automatically as well.
+
 ##Container-Level:
 
 name 
@@ -89,11 +102,11 @@ spriteCountTotal/ spriteCountX/ spriteCountY
 ##Emitter-Level:
 
 
-#####BasicData: 
+#####BasicData:Â 
 
 name	
 	-This is the name of the emitter. "Smoke". Means that now "Smoke" is part of a group of 
-	 emitters in the container "Fire." 
+	 emitters in the container "Fire."Â 
 
 
 texture
@@ -108,7 +121,7 @@ animated: Some emitters container particles that are
 
 
 spriteLocation
-	-If the particles in the emitter are not animated; you can specify the X,Y 
+	-If the particles in the emitter are not animated;Â you can specifyÂ the X,Y 
 	 position of the sprite you want to use if the texture you are using 
 	 (container or emitter level) is a sprite sheet.
 
@@ -125,15 +138,15 @@ color
 
 
 positionX/positionY /positionZ
-	-This data takes two floats separated by a ~. This randomizes the starting 
+	-This data takes two floats separated by a ~. This randomizesÂ the starting 
  	 position of the particle between these numbers.
 
 
-velocityX/ velocityY/ velocityZ
+velocityX/Â velocityY/Â velocityZ
 	-Same with velocity.
 
 
-orientationX/ orientationY/ orientationZ
+orientationX/Â orientationY/Â orientationZ
 	-And orientation.
 
 
@@ -148,7 +161,7 @@ initialCount
 
 
 loop
-	-The particles spawned with the initialCount can either play once or repeat indefinitely. 
+	-The particles spawned with the initialCount can either play once or repeat indefinitely.Â 
 
 
 renderDelay
@@ -156,7 +169,7 @@ renderDelay
 
 
 lifespan
-	-Time before the particle stops updating/rendering. 
+	-Time before the particle stops updating/rendering.Â 
 
 
 fadeTime
