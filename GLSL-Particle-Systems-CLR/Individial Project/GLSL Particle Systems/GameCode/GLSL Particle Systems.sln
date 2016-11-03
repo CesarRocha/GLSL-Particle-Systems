@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "A3_CompleteUISystem", "TestGame.vcxproj", "{BEA7582C-87FB-4844-BEE6-DC1D4084D6EF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Engine", "..\..\..\Engine\Engine.vcxproj", "{6BE825EC-EF37-4357-A8AD-8E57E3CAF054}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_Inline|Win32 = Debug_Inline|Win32
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BEA7582C-87FB-4844-BEE6-DC1D4084D6EF}.Debug_Inline|Win32.ActiveCfg = Debug_Inline|Win32
+		{BEA7582C-87FB-4844-BEE6-DC1D4084D6EF}.Debug_Inline|Win32.Build.0 = Debug_Inline|Win32
+		{BEA7582C-87FB-4844-BEE6-DC1D4084D6EF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BEA7582C-87FB-4844-BEE6-DC1D4084D6EF}.Debug|Win32.Build.0 = Debug|Win32
+		{BEA7582C-87FB-4844-BEE6-DC1D4084D6EF}.Release|Win32.ActiveCfg = Release|Win32
+		{BEA7582C-87FB-4844-BEE6-DC1D4084D6EF}.Release|Win32.Build.0 = Release|Win32
+		{6BE825EC-EF37-4357-A8AD-8E57E3CAF054}.Debug_Inline|Win32.ActiveCfg = Debug_Inline|Win32
+		{6BE825EC-EF37-4357-A8AD-8E57E3CAF054}.Debug_Inline|Win32.Build.0 = Debug_Inline|Win32
+		{6BE825EC-EF37-4357-A8AD-8E57E3CAF054}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6BE825EC-EF37-4357-A8AD-8E57E3CAF054}.Debug|Win32.Build.0 = Debug|Win32
+		{6BE825EC-EF37-4357-A8AD-8E57E3CAF054}.Release|Win32.ActiveCfg = Release|Win32
+		{6BE825EC-EF37-4357-A8AD-8E57E3CAF054}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

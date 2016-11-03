@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Theme name="ALEX Theme">
+  <BaseWidgets>
+     <Base 
+      name="Base"
+      offset="0,0"
+      size="100,100"
+      bgcolor="0,196,255"
+      edgecolor="0,0,255"
+      edgethickness="5`.0"
+      opacity ="51.0"
+      />
+
+    <Button
+      name ="Button"
+      text="ALEXSTYLEBUTTON"
+      textscale="1.0"
+      textcolor="0,0,0"
+      textopacity="1.0">
+
+      <State
+        statename="highlighted"
+        bgcolor="64,64,64"
+      />
+
+
+
+    </Button>
+  </BaseWidgets>
+  
+  
+  
+  
+  
+</Theme>

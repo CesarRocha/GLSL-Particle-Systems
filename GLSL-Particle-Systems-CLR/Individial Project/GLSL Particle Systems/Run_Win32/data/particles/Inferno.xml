@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="GLSL Particle Systems">
+
+
+  <Container name ="Inferno" 
+             texture ="./data/images/AnimatedExplosionBW.png" spriteCountTotal="49" spriteCountX="7" spriteCountY="7">
+    <Emitter>
+      <BasicData
+        name          ="Flame"
+        animated      ="TRUE"/>
+      <VertData
+        size          ="10.0"
+        color         ="255, 64, 10, 255"
+        positionX     ="30.0 ~ -30.0"
+        positionY     ="30.0 ~ -30.0"
+        
+        velocityZ     ="0.1  ~ 0.3" />
+      <SpawnRules
+        lifespan      ="1.5"
+        spawnRate     ="1000~1.5"
+        spawnRateLoop ="TRUE" />
+      <RenderingRules
+        GLType        ="ADDITIVE"/>
+      </Emitter>
+
+
+  </Container>
+</Project>
+

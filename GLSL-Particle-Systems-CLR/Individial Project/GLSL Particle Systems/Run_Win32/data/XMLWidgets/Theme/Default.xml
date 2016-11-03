@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Theme name="System Default">
+  <Widgets>
+     <Base 
+      name="Base"
+      offset="1,1"
+      size="20,40"
+      bgcolor="255,0,0"
+      edgecolor="0,255,0"
+      opacity ="50"
+      />
+
+    <Button
+      name ="Button"
+      text="NO_TEXT"
+      textscale="1.0"
+      textcolor="255,255,255"
+      textopacity="100.0"
+      />
+    
+           
+    
+    
+  </Widgets>
+  
+  
+  
+  
+  
+</Theme>

@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Renderer">
+      <UniqueIdentifier>{2f64e6f4-619c-4e17-94ca-4d59c5b5fa6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{a91e2995-1aea-44b3-a9a4-7db7378fa3cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{6766cc82-34fa-44b0-9bcc-44daa2ad9534}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sound">
+      <UniqueIdentifier>{65a5dd74-4215-49fe-8b9b-d43f80ce727c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Console">
+      <UniqueIdentifier>{f958f3ff-a182-4219-8d7a-23d697e9b511}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math\3D">
+      <UniqueIdentifier>{5573abb4-8ea2-4f01-94f4-ddef196b3025}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math\PerlinNoise">
+      <UniqueIdentifier>{d3f76e3c-b6e1-47d2-9d0b-399f761f2cb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Shader">
+      <UniqueIdentifier>{c44cfebf-2551-401c-b98a-7030cb71616b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Particle">
+      <UniqueIdentifier>{75e1c73e-9543-408d-8ee8-833e0a44b5d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Font">
+      <UniqueIdentifier>{f076ecb8-b08e-4d0c-b8d9-7b784f0a3288}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Lighting">
+      <UniqueIdentifier>{17534d5d-9a90-4b7f-b884-353079af290b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineCommon">
+      <UniqueIdentifier>{30e9da53-fb3b-416e-8493-0ea820936455}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Shapes">
+      <UniqueIdentifier>{c692f5c0-8901-4385-af4e-035262290cf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{57e82e09-86fc-4ae8-aa6e-13071d61ef80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\Parser">
+      <UniqueIdentifier>{7b094c61-9189-4ebb-a8cf-8d11e6a02d06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Font\BasicShader">
+      <UniqueIdentifier>{f6f36cb3-59c3-4794-a7b9-000ef375002f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\ModelLoader">
+      <UniqueIdentifier>{3d4cf68c-8781-4279-96a5-55e3416dbd88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Clock">
+      <UniqueIdentifier>{654a5ae4-7560-4acb-a6ad-325efb65f1b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\Profiling">
+      <UniqueIdentifier>{14916949-f051-44d3-8c2d-d11ce5f41f49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System">
+      <UniqueIdentifier>{977913f2-50ba-47a2-b07a-d253da887adc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Threading">
+      <UniqueIdentifier>{84b5a2e7-a771-4aa4-95e6-dbd790043fd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\JobManager">
+      <UniqueIdentifier>{a9c7bf26-871f-4432-afbf-1903a08d953f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Commandlets">
+      <UniqueIdentifier>{aac81b3b-5ad3-46f6-8b56-afcd0154d31e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\MemoryManager">
+      <UniqueIdentifier>{f3ee4539-4d91-475c-a3c9-610454c835e5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Renderer\OpenGLRenderer.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Texture.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\InputSystem.hpp">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\XboxInput.hpp">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\AnimatedTexture.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Console\Console.hpp">
+      <Filter>Console</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Vector2.hpp">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\AABB2.hpp">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Disc2.hpp">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\LineSegment2.hpp">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Math2D.hpp">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\MathUtilities.hpp">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\3D\AABB3.hpp">
+      <Filter>Math\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\3D\LineSegment3.hpp">
+      <Filter>Math\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\3D\Math3D.hpp">
+      <Filter>Math\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\3D\Sphere3.hpp">
+      <Filter>Math\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\3D\Vector3.hpp">
+      <Filter>Math\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\3D\Vector4.hpp">
+      <Filter>Math\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\3D\EulerAngles.hpp">
+      <Filter>Math\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Camera3D.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\PerlinNoise\Noise.hpp">
+      <Filter>Math\PerlinNoise</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\IntVector2.hpp">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\RGBA.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Geometry.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\glext.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\3D\Matrix4x4.hpp">
+      <Filter>Math\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Font\Font.hpp">
+      <Filter>Renderer\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Shader\Material.hpp">
+      <Filter>Renderer\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Shader\Mesh.hpp">
+      <Filter>Renderer\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Shader\MeshRenderer.hpp">
+      <Filter>Renderer\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Shapes\Sphere.hpp">
+      <Filter>Renderer\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\Utility.hpp">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\Parser\ParserHelpers.hpp">
+      <Filter>Utility\Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\Parser\xmlParser.h">
+      <Filter>Utility\Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Font\BasicShader\BasicShader.hpp">
+      <Filter>Renderer\Font\BasicShader</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\ModelLoader\ModelLoader.hpp">
+      <Filter>Renderer\ModelLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="Clock\Clock.hpp">
+      <Filter>Clock</Filter>
+    </ClInclude>
+    <ClInclude Include="System\JobManager\JobManager.hpp">
+      <Filter>System\JobManager</Filter>
+    </ClInclude>
+    <ClInclude Include="System\Commanlets\Commanlets.hpp">
+      <Filter>System\Commandlets</Filter>
+    </ClInclude>
+    <ClInclude Include="System\Threading\Threading.hpp">
+      <Filter>System\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="System\Threading\ThreadSafeQueue.hpp">
+      <Filter>System\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="System\JobManager\Job.hpp">
+      <Filter>System\JobManager</Filter>
+    </ClInclude>
+    <ClInclude Include="System\JobManager\Thread.hpp">
+      <Filter>System\JobManager</Filter>
+    </ClInclude>
+    <ClInclude Include="System\MemoryManager\CustomNewDelete.hpp">
+      <Filter>System\MemoryManager</Filter>
+    </ClInclude>
+    <ClInclude Include="System\MemoryManager\SignPostAllocator.hpp">
+      <Filter>System\MemoryManager</Filter>
+    </ClInclude>
+    <ClInclude Include="System\MemoryManager\MemoryManager.hpp">
+      <Filter>System\MemoryManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound\Sound.hpp" />
+    <ClInclude Include="Sound\SoundSystem.hpp" />
+    <ClInclude Include="Utility\AssertionMacros.hpp" />
+    <ClInclude Include="Console\ConsoleCommandArgs.hpp" />
+    <ClInclude Include="Clock\Alarm.hpp" />
+    <ClInclude Include="Clock\MasterClock.hpp" />
+    <ClInclude Include="Renderer\Shader\MaterialDependants\Sampler.hpp" />
+    <ClInclude Include="Renderer\Shader\MaterialDependants\Shader.hpp">
+      <Filter>Renderer\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Lighting\LightingProperties.hpp">
+      <Filter>Renderer\Lighting</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Voxel.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\vert_t.hpp" />
+    <ClInclude Include="Utility\Parser\BinaryBufferBuilder.hpp" />
+    <ClInclude Include="Utility\Parser\BinaryBufferParser.hpp" />
+    <ClInclude Include="Utility\Parser\BinaryFileParser.hpp" />
+    <ClInclude Include="Renderer\vert_s.hpp" />
+    <ClInclude Include="EngineCommon\EngineCommon.hpp">
+      <Filter>EngineCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleSystem\EmitterContainer.hpp" />
+    <ClInclude Include="ParticleSystem\EnhancedParticle.hpp" />
+    <ClInclude Include="ParticleSystem\ParticleEmitter.hpp" />
+    <ClInclude Include="ParticleSystem\ParticleSystem.hpp" />
+    <ClInclude Include="ParticleSystem\ParticleExportAndHeaders\BasicData.hpp" />
+    <ClInclude Include="ParticleSystem\ParticleExportAndHeaders\ContainerXMLData.hpp" />
+    <ClInclude Include="ParticleSystem\ParticleExportAndHeaders\EmitterXMLData.hpp" />
+    <ClInclude Include="ParticleSystem\ParticleExportAndHeaders\ParticleInformation.hpp" />
+    <ClInclude Include="ParticleSystem\ParticleExportAndHeaders\RenderingRules.hpp" />
+    <ClInclude Include="ParticleSystem\ParticleExportAndHeaders\SpawnRules.hpp" />
+    <ClInclude Include="ParticleSystem\ParticleExportAndHeaders\VertData.hpp" />
+    <ClInclude Include="ParticleSystem\ParticleSystemData.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Renderer\OpenGLRenderer.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Texture.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\stb_image.c">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Input\InputSystem.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Input\XboxInput.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\AnimatedTexture.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Console\Console.cpp">
+      <Filter>Console</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Vector2.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\AABB2.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Disc2.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\LineSegment2.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Math2D.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\MathUtilities.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\3D\AABB3.cpp">
+      <Filter>Math\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\3D\LineSegment3.cpp">
+      <Filter>Math\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\3D\Math3D.cpp">
+      <Filter>Math\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\3D\Sphere3.cpp">
+      <Filter>Math\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\3D\Vector3.cpp">
+      <Filter>Math\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\3D\Vector4.cpp">
+      <Filter>Math\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\PerlinNoise\Noise.cpp">
+      <Filter>Math\PerlinNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\IntVector2.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\RGBA.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\3D\Matrix4x4.cpp">
+      <Filter>Math\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Camera3D.cpp">
+      <Filter>Math\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Font\Font.cpp">
+      <Filter>Renderer\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Shader\Material.cpp">
+      <Filter>Renderer\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Shader\Mesh.cpp">
+      <Filter>Renderer\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Shapes\Sphere.cpp">
+      <Filter>Renderer\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Shader\MeshRenderer.cpp">
+      <Filter>Renderer\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\Utility.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\Parser\xmlParser.cpp">
+      <Filter>Utility\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Font\BasicShader\BasicShader.cpp">
+      <Filter>Renderer\Font\BasicShader</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\ModelLoader\ModelLoader.cpp">
+      <Filter>Renderer\ModelLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="Clock\Clock.cpp">
+      <Filter>Clock</Filter>
+    </ClCompile>
+    <ClCompile Include="System\JobManager\JobManager.cpp">
+      <Filter>System\JobManager</Filter>
+    </ClCompile>
+    <ClCompile Include="System\Commanlets\Commanlets.cpp">
+      <Filter>System\Commandlets</Filter>
+    </ClCompile>
+    <ClCompile Include="System\Threading\Threading.cpp">
+      <Filter>System\Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="System\JobManager\Job.cpp">
+      <Filter>System\JobManager</Filter>
+    </ClCompile>
+    <ClCompile Include="System\JobManager\Thread.cpp">
+      <Filter>System\JobManager</Filter>
+    </ClCompile>
+    <ClCompile Include="System\MemoryManager\CustomNewDelete.cpp">
+      <Filter>System\MemoryManager</Filter>
+    </ClCompile>
+    <ClCompile Include="System\MemoryManager\SignPostAllocator.cpp">
+      <Filter>System\MemoryManager</Filter>
+    </ClCompile>
+    <ClCompile Include="System\MemoryManager\MemoryManager.cpp">
+      <Filter>System\MemoryManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Sound\Sound.cpp" />
+    <ClCompile Include="Sound\SoundSystem.cpp" />
+    <ClCompile Include="Console\ConsoleCommandArgs.cpp" />
+    <ClCompile Include="Clock\Alarm.cpp" />
+    <ClCompile Include="Clock\MasterClock.cpp" />
+    <ClCompile Include="Renderer\Shader\MaterialDependants\Sampler.cpp" />
+    <ClCompile Include="Renderer\Shader\MaterialDependants\Shader.cpp">
+      <Filter>Renderer\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\vert_t.cpp" />
+    <ClCompile Include="Utility\Parser\BinaryBufferBuilder.cpp" />
+    <ClCompile Include="Utility\Parser\BinaryBufferParser.cpp" />
+    <ClCompile Include="Utility\Parser\BinaryFileParser.cpp" />
+    <ClCompile Include="Renderer\vert_s.cpp" />
+    <ClCompile Include="EngineCommon\EngineCommon.cpp">
+      <Filter>EngineCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleSystem\EmitterContainer.cpp" />
+    <ClCompile Include="ParticleSystem\EnhancedParticle.cpp" />
+    <ClCompile Include="ParticleSystem\ParticleEmitter.cpp" />
+    <ClCompile Include="ParticleSystem\ParticleSystem.cpp" />
+    <ClCompile Include="ParticleSystem\ParticleExportAndHeaders\BasicData.cpp" />
+    <ClCompile Include="ParticleSystem\ParticleExportAndHeaders\ContainerXMLData.cpp" />
+    <ClCompile Include="ParticleSystem\ParticleExportAndHeaders\EmitterXMLData.cpp" />
+    <ClCompile Include="ParticleSystem\ParticleExportAndHeaders\RenderingRules.cpp" />
+    <ClCompile Include="ParticleSystem\ParticleExportAndHeaders\SpawnRules.cpp" />
+    <ClCompile Include="ParticleSystem\ParticleExportAndHeaders\VertData.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Renderer\Font\BasicShader\FontInfo\font_fragment.glsl" />
+    <None Include="Renderer\Font\BasicShader\FontInfo\font_vertex.glsl" />
+    <None Include="Renderer\Font\FontInfo\font_fragment.glsl" />
+    <None Include="Renderer\Font\FontInfo\font_vertex.glsl" />
+    <None Include="Renderer\Shader\DebugCoordinateShader\DebugCoords_fragment.glsl" />
+    <None Include="Renderer\Shader\DebugCoordinateShader\DebugCoords_geometry.glsl" />
+    <None Include="Renderer\Shader\DebugCoordinateShader\DebugCoords_vertex.glsl" />
+    <None Include="Renderer\Shader\DebugGridShader\DebugGrid_fragment.glsl" />
+    <None Include="Renderer\Shader\DebugGridShader\DebugGrid_geometry.glsl" />
+    <None Include="Renderer\Shader\DebugGridShader\DebugGrid_vertex.glsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Renderer\Font\BasicShader\FontInfo\test.png" />
+    <Image Include="Renderer\Font\BasicShader\FontInfo\text.png" />
+    <Image Include="Renderer\Font\FontInfo\test.png" />
+    <Image Include="Renderer\Font\FontInfo\text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Renderer\Font\BasicShader\FontInfo\text.txt" />
+    <Text Include="Renderer\Font\FontInfo\ariel.txt" />
+  </ItemGroup>
+</Project>

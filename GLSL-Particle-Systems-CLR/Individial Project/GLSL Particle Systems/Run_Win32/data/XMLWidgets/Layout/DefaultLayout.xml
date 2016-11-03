@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Layout name="Default System Layouts">
+  <Standard name="6 Buttons">
+    
+    <LayoutSettings
+      offset ="100,100"/>
+    
+    <LayoutMembers>
+      <Member
+        type="Button"
+        offset ="100,100"
+        theme="Spooky Theme"/>
+
+      <Member
+        type="Button"
+        offset ="100,1000"/>
+
+      <Member
+        type="Button"
+        offset ="0,0"/>
+
+
+      
+    </LayoutMembers>
+  </Standard>
+</Layout>

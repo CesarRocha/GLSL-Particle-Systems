@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="GLSL Particle Systems">
+  <Container name="Snowstorm" texture="./data/images/AnimatedExplosionBW.png" spriteCountTotal="49" spriteCountX="7" spriteCountY="7">
+		<Emitter>
+			<BasicData name="Snow1" texture="./data/images/snowflake.png" spriteCountTotal="1" spriteCountX="1" spriteCountY="1" animated="FALSE" spriteLocation="5, 3"/>
+			<VertData 	size="1.000000 ~ 5.000000"
+							color="64, 64, 100, 255"
+							positionX="100.000000 ~ -100.000000"
+							positionY="100.000000 ~ -100.000000"
+							positionZ="100.000000 ~ 100.000000"
+							velocityX="0.000000 ~ 0.000000"
+							velocityY="0.100000 ~ 0.200000"
+							velocityZ="0.000000 ~ -0.250000"
+							orientationX="1.000000 ~ -1.000000"
+							orientationY="1.000000 ~ -1.000000"
+							orientationZ="0.000000 ~ 0.000000"
+							normalizeVelocity="false"/>
+			<SpawnRules initialCount="0" loop="FALSE" renderDelay="0.000000" lifespan="10.000000" fadeTime="3.000000" spawnRate="10000.000000 ~ 10.000000" spawnRateLoop="TRUE"/>
+			<RenderingRules GLType="ADDITIVE"/>
+		</Emitter>
+		<Emitter>
+			<BasicData name="Snow1" texture="./data/images/snowflake2.png" spriteCountTotal="1" spriteCountX="1" spriteCountY="1" animated="FALSE" spriteLocation="5, 3"/>
+			<VertData 	size="1.000000 ~ 5.000000"
+							color="64, 64, 100, 255"
+							positionX="100.000000 ~ -100.000000"
+							positionY="100.000000 ~ -100.000000"
+							positionZ="100.000000 ~ 100.000000"
+							velocityX="0.000000 ~ 0.000000"
+							velocityY="0.100000 ~ 0.200000"
+							velocityZ="0.000000 ~ -0.250000"
+							orientationX="1.000000 ~ -1.000000"
+							orientationY="1.000000 ~ -1.000000"
+							orientationZ="0.000000 ~ 0.000000"
+							normalizeVelocity="false"/>
+			<SpawnRules initialCount="0" loop="FALSE" renderDelay="0.000000" lifespan="10.000000" fadeTime="3.000000" spawnRate="10000.000000 ~ 10.000000" spawnRateLoop="TRUE"/>
+			<RenderingRules GLType="ADDITIVE"/>
+		</Emitter>
+	</Container>
+</Project>

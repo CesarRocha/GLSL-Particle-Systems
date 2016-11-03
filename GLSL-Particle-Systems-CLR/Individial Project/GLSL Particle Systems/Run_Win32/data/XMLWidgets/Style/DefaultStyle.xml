@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Theme name="System Default">
+  <BaseWidgets>
+     <Base 
+      name="Base"
+      offset="0,0"
+      size="100,100"
+      bgcolor="127,127,127"
+      edgecolor="0,255,0"
+      edgethickness="5.0"
+      opacity ="1.0"
+      />
+    
+    <Button      
+      name ="Button"      
+      text="SYSTEMDEFAULTBUTTON"      
+      textscale="1.0"      
+      textcolor="255,0,0"      
+      textopacity="1.0">
+      <State statename="highlighted" bgcolor="255,255,255"/>
+      <State statename="disabled"    bgcolor="64,64,64"   />
+      
+      
+    </Button>
+  </BaseWidgets>
+
+  <NamedWidgets>
+    <Widget
+      type="Button"
+      widgetname="Quit Button"
+      text="Quit Button"
+      />
+    <Widget
+      type="Button"
+      widgetname="Continue"
+      text="Continue"
+      />
+    <Widget
+      type="Button"
+      widgetname="Exit"
+      text="Exit"
+      />
+    
+    
+  </NamedWidgets>
+  
+  
+  
+  
+</Theme>

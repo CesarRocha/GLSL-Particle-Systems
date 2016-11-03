@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="GLSL Particle Systems"         load="false"         run ="false">
+  <Container 
+    name="FireAni" 
+    texture="./data/images/AnimatedExplosionBW.png" spriteCountTotal="49" spriteCountX="7" spriteCountY="7">
+    
+    <Emitter>
+      <BasicData
+        name          ="Flame"
+        animated      ="TRUE"/>
+      <VertData
+        size          ="10.0"
+        color         ="255, 64, 5, 255"
+        positionX     ="2 ~ -2"
+        positionY     ="2 ~ -2"
+        
+        velocityX     ="0.02   ~ -0.02"
+        velocityY     ="0.02   ~ -0.02"
+        velocityZ     ="0.1    ~  0.3" />
+      <SpawnRules
+        lifespan      ="1.5"
+        fadeTime      ="1.5"
+        spawnRate     ="500~1.5"
+        spawnRateLoop ="TRUE"   />
+      <RenderingRules
+         GLType        ="ADDITIVE"/>
+    </Emitter>
+    <!--
+    ///////////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////////
+    -->
+    <Emitter>
+      <BasicData
+        name          ="Smoke"
+        texture       ="./data/images/SmokeAniBW.png" spriteCountTotal="46" spriteCountX="7" spriteCountY="7"
+        animated      ="TRUE"/>
+      <VertData
+        size          ="10.0"
+        color         ="64, 64, 64, 255"
+        positionX     ="2 ~ -2"
+        positionY     ="2 ~ -2"
+        positionZ     ="0 ~  0"
+        
+        velocityX     ="0.05   ~ -0.05"
+        velocityY     ="0.05   ~ -0.05"
+        velocityZ     ="0.1   ~  0.3" />
+      <SpawnRules
+        lifespan      ="3.0"
+        fadeTime      ="3.0"
+        spawnRate     ="300~9"
+        spawnRateLoop ="TRUE"     />
+      <RenderingRules
+        GLType        ="ADDITIVE" />
+    </Emitter>
+    <!--
+    ///////////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////////
+    -->
+    <Emitter>
+      <BasicData
+        name          ="Spark"
+        texture       ="./data/images/star.png"/>
+      <VertData
+        size          ="3.0"
+        color         ="255, 128, 0, 255"
+        velocityX     ="0.4  ~ -0.4"
+        velocityY     ="0.4  ~ -0.4"
+        velocityZ     ="0.4  ~ -0.4" />
+      <SpawnRules
+        lifespan      ="1.0"
+        fadeTime      ="1.0"
+        spawnRate     ="10~1"
+        spawnRateLoop ="TRUE" />
+      <RenderingRules
+        GLType        ="ADDITIVE" />
+    </Emitter>
+    <!--
+    ///////////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////////
+    -->
+  </Container>
+</Project>
+

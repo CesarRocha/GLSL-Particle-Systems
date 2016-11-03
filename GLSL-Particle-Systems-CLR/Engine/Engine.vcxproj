@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_Inline|Win32">
+      <Configuration>Debug_Inline</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6BE825EC-EF37-4357-A8AD-8E57E3CAF054}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Engine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '13'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14'">v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Inline|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '13'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14'">v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '13'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14'">v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Inline|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)..\Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>$(SolutionDir)..\Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)..\Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>$(SolutionDir)..\Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Inline|Win32'">
+    <OutDir>$(SolutionDir)..\Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Inline|Win32'">
+    <IntDir>$(SolutionDir)..\Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)../;$(ProjectDir)/Sound/cricket-1.4.2/inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)/Sound/cricket-1.4.2/lib/win/vs$(VisualStudioVersion)/x86/DebugStatic7</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Inline|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)../;$(ProjectDir)/Sound/cricket-1.4.2/inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)/Sound/cricket-1.4.2/lib/win/vs$(VisualStudioVersion)/x86/DebugStatic7</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)../;$(ProjectDir)/Sound/cricket-1.4.2/inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>MinSpace</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)/Sound/cricket-1.4.2/lib/win/vs$(VisualStudioVersion)/x86/DebugStatic7</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Clock\Alarm.hpp" />
+    <ClInclude Include="Clock\Clock.hpp" />
+    <ClInclude Include="Clock\MasterClock.hpp" />
+    <ClInclude Include="Console\Console.hpp" />
+    <ClInclude Include="Console\ConsoleCommandArgs.hpp" />
+    <ClInclude Include="EngineCommon\EngineCommon.hpp" />
+    <ClInclude Include="ParticleSystem\EmitterContainer.hpp" />
+    <ClInclude Include="ParticleSystem\ParticleExportAndHeaders\BasicData.hpp" />
+    <ClInclude Include="ParticleSystem\ParticleExportAndHeaders\ContainerXMLData.hpp" />
+    <ClInclude Include="ParticleSystem\ParticleExportAndHeaders\EmitterXMLData.hpp" />
+    <ClInclude Include="ParticleSystem\ParticleExportAndHeaders\ParticleInformation.hpp" />
+    <ClInclude Include="ParticleSystem\ParticleExportAndHeaders\RenderingRules.hpp" />
+    <ClInclude Include="ParticleSystem\ParticleExportAndHeaders\SpawnRules.hpp" />
+    <ClInclude Include="ParticleSystem\ParticleExportAndHeaders\VertData.hpp" />
+    <ClInclude Include="ParticleSystem\ParticleSystem.hpp" />
+    <ClInclude Include="ParticleSystem\EnhancedParticle.hpp" />
+    <ClInclude Include="ParticleSystem\ParticleEmitter.hpp" />
+    <ClInclude Include="Input\InputSystem.hpp" />
+    <ClInclude Include="Input\XboxInput.hpp" />
+    <ClInclude Include="Math\3D\AABB3.hpp" />
+    <ClInclude Include="Math\3D\EulerAngles.hpp" />
+    <ClInclude Include="Math\3D\LineSegment3.hpp" />
+    <ClInclude Include="Math\3D\Math3D.hpp" />
+    <ClInclude Include="Math\3D\Matrix4x4.hpp" />
+    <ClInclude Include="Math\3D\Sphere3.hpp" />
+    <ClInclude Include="Math\3D\Vector3.hpp" />
+    <ClInclude Include="Math\3D\Vector4.hpp" />
+    <ClInclude Include="Math\AABB2.hpp" />
+    <ClInclude Include="Math\Disc2.hpp" />
+    <ClInclude Include="Math\IntVector2.hpp" />
+    <ClInclude Include="Math\LineSegment2.hpp" />
+    <ClInclude Include="Math\Math2D.hpp" />
+    <ClInclude Include="Math\MathUtilities.hpp" />
+    <ClInclude Include="Math\PerlinNoise\Noise.hpp" />
+    <ClInclude Include="Math\Vector2.hpp" />
+    <ClInclude Include="ParticleSystem\ParticleSystemData.hpp" />
+    <ClInclude Include="Renderer\AnimatedTexture.hpp" />
+    <ClInclude Include="Renderer\Camera3D.hpp" />
+    <ClInclude Include="Renderer\Font\BasicShader\BasicShader.hpp" />
+    <ClInclude Include="Renderer\Font\Font.hpp" />
+    <ClInclude Include="Renderer\Geometry.hpp" />
+    <ClInclude Include="Renderer\glext.h" />
+    <ClInclude Include="Renderer\Lighting\LightingProperties.hpp" />
+    <ClInclude Include="Renderer\ModelLoader\ModelLoader.hpp" />
+    <ClInclude Include="Renderer\OpenGLRenderer.hpp" />
+    <ClInclude Include="Renderer\RGBA.hpp" />
+    <ClInclude Include="Renderer\Shader\Material.hpp" />
+    <ClInclude Include="Renderer\Shader\MaterialDependants\Sampler.hpp" />
+    <ClInclude Include="Renderer\Shader\Mesh.hpp" />
+    <ClInclude Include="Renderer\Shader\MeshRenderer.hpp" />
+    <ClInclude Include="Renderer\Shader\MaterialDependants\Shader.hpp" />
+    <ClInclude Include="Renderer\Shapes\Sphere.hpp" />
+    <ClInclude Include="Renderer\vert_s.hpp" />
+    <ClInclude Include="Renderer\vert_t.hpp" />
+    <ClInclude Include="Renderer\Voxel.hpp" />
+    <ClInclude Include="Renderer\Texture.hpp" />
+    <ClInclude Include="Sound\Sound.hpp" />
+    <ClInclude Include="Sound\SoundSystem.hpp" />
+    <ClInclude Include="System\Commanlets\Commanlets.hpp" />
+    <ClInclude Include="System\JobManager\Job.hpp" />
+    <ClInclude Include="System\JobManager\JobManager.hpp" />
+    <ClInclude Include="System\JobManager\Thread.hpp" />
+    <ClInclude Include="System\MemoryManager\CustomNewDelete.hpp" />
+    <ClInclude Include="System\MemoryManager\SignPostAllocator.hpp" />
+    <ClInclude Include="System\MemoryManager\MemoryManager.hpp" />
+    <ClInclude Include="System\Threading\Threading.hpp" />
+    <ClInclude Include="System\Threading\ThreadSafeQueue.hpp" />
+    <ClInclude Include="Utility\AssertionMacros.hpp" />
+    <ClInclude Include="Utility\Parser\BinaryBufferBuilder.hpp" />
+    <ClInclude Include="Utility\Parser\BinaryBufferParser.hpp" />
+    <ClInclude Include="Utility\Parser\BinaryFileParser.hpp" />
+    <ClInclude Include="Utility\Parser\ParserHelpers.hpp" />
+    <ClInclude Include="Utility\Parser\xmlParser.h" />
+    <ClInclude Include="Utility\Utility.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Clock\Alarm.cpp" />
+    <ClCompile Include="Clock\Clock.cpp" />
+    <ClCompile Include="Clock\MasterClock.cpp" />
+    <ClCompile Include="Console\Console.cpp" />
+    <ClCompile Include="Console\ConsoleCommandArgs.cpp" />
+    <ClCompile Include="EngineCommon\EngineCommon.cpp" />
+    <ClCompile Include="ParticleSystem\ParticleExportAndHeaders\BasicData.cpp" />
+    <ClCompile Include="ParticleSystem\ParticleExportAndHeaders\ContainerXMLData.cpp" />
+    <ClCompile Include="ParticleSystem\ParticleExportAndHeaders\EmitterXMLData.cpp" />
+    <ClCompile Include="ParticleSystem\ParticleExportAndHeaders\RenderingRules.cpp" />
+    <ClCompile Include="ParticleSystem\ParticleExportAndHeaders\SpawnRules.cpp" />
+    <ClCompile Include="ParticleSystem\ParticleExportAndHeaders\VertData.cpp" />
+    <ClCompile Include="ParticleSystem\ParticleSystem.cpp" />
+    <ClCompile Include="ParticleSystem\EnhancedParticle.cpp" />
+    <ClCompile Include="ParticleSystem\ParticleEmitter.cpp" />
+    <ClCompile Include="ParticleSystem\EmitterContainer.cpp" />
+    <ClCompile Include="Input\InputSystem.cpp" />
+    <ClCompile Include="Input\XboxInput.cpp" />
+    <ClCompile Include="Math\3D\AABB3.cpp" />
+    <ClCompile Include="Math\3D\LineSegment3.cpp" />
+    <ClCompile Include="Math\3D\Math3D.cpp" />
+    <ClCompile Include="Math\3D\Matrix4x4.cpp" />
+    <ClCompile Include="Math\3D\Sphere3.cpp" />
+    <ClCompile Include="Math\3D\Vector3.cpp" />
+    <ClCompile Include="Math\3D\Vector4.cpp" />
+    <ClCompile Include="Math\AABB2.cpp" />
+    <ClCompile Include="Math\Disc2.cpp" />
+    <ClCompile Include="Math\IntVector2.cpp" />
+    <ClCompile Include="Math\LineSegment2.cpp" />
+    <ClCompile Include="Math\Math2D.cpp" />
+    <ClCompile Include="Math\MathUtilities.cpp" />
+    <ClCompile Include="Math\PerlinNoise\Noise.cpp" />
+    <ClCompile Include="Math\Vector2.cpp" />
+    <ClCompile Include="Renderer\AnimatedTexture.cpp" />
+    <ClCompile Include="Renderer\Camera3D.cpp" />
+    <ClCompile Include="Renderer\Font\BasicShader\BasicShader.cpp" />
+    <ClCompile Include="Renderer\Font\Font.cpp" />
+    <ClCompile Include="Renderer\ModelLoader\ModelLoader.cpp" />
+    <ClCompile Include="Renderer\RGBA.cpp" />
+    <ClCompile Include="Renderer\Shader\Material.cpp" />
+    <ClCompile Include="Renderer\Shader\MaterialDependants\Sampler.cpp" />
+    <ClCompile Include="Renderer\Shader\Mesh.cpp" />
+    <ClCompile Include="Renderer\Shader\MeshRenderer.cpp" />
+    <ClCompile Include="Renderer\Shader\MaterialDependants\Shader.cpp" />
+    <ClCompile Include="Renderer\Shapes\Sphere.cpp" />
+    <ClCompile Include="Renderer\stb_image.c" />
+    <ClCompile Include="Renderer\Texture.cpp" />
+    <ClCompile Include="Renderer\OpenGLRenderer.cpp" />
+    <ClCompile Include="Renderer\vert_s.cpp" />
+    <ClCompile Include="Renderer\vert_t.cpp" />
+    <ClCompile Include="Sound\Sound.cpp" />
+    <ClCompile Include="Sound\SoundSystem.cpp" />
+    <ClCompile Include="System\Commanlets\Commanlets.cpp" />
+    <ClCompile Include="System\JobManager\Job.cpp" />
+    <ClCompile Include="System\JobManager\JobManager.cpp" />
+    <ClCompile Include="System\JobManager\Thread.cpp" />
+    <ClCompile Include="System\MemoryManager\CustomNewDelete.cpp" />
+    <ClCompile Include="System\MemoryManager\SignPostAllocator.cpp" />
+    <ClCompile Include="System\MemoryManager\MemoryManager.cpp" />
+    <ClCompile Include="System\Threading\Threading.cpp" />
+    <ClCompile Include="Utility\Parser\BinaryBufferBuilder.cpp" />
+    <ClCompile Include="Utility\Parser\BinaryBufferParser.cpp" />
+    <ClCompile Include="Utility\Parser\BinaryFileParser.cpp" />
+    <ClCompile Include="Utility\Parser\xmlParser.cpp" />
+    <ClCompile Include="Utility\Utility.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Renderer\Font\BasicShader\FontInfo\font_fragment.glsl" />
+    <None Include="Renderer\Font\BasicShader\FontInfo\font_vertex.glsl" />
+    <None Include="Renderer\Font\FontInfo\font_fragment.glsl" />
+    <None Include="Renderer\Font\FontInfo\font_vertex.glsl" />
+    <None Include="Renderer\Shader\DebugCoordinateShader\DebugCoords_fragment.glsl" />
+    <None Include="Renderer\Shader\DebugCoordinateShader\DebugCoords_geometry.glsl" />
+    <None Include="Renderer\Shader\DebugCoordinateShader\DebugCoords_vertex.glsl" />
+    <None Include="Renderer\Shader\DebugGridShader\DebugGrid_fragment.glsl" />
+    <None Include="Renderer\Shader\DebugGridShader\DebugGrid_geometry.glsl" />
+    <None Include="Renderer\Shader\DebugGridShader\DebugGrid_vertex.glsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Renderer\Font\BasicShader\FontInfo\test.png" />
+    <Image Include="Renderer\Font\BasicShader\FontInfo\text.png" />
+    <Image Include="Renderer\Font\FontInfo\test.png" />
+    <Image Include="Renderer\Font\FontInfo\text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Renderer\Font\BasicShader\FontInfo\text.txt" />
+    <Text Include="Renderer\Font\FontInfo\ariel.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

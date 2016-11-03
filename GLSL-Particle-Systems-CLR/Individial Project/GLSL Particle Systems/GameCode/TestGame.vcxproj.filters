@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Main Files">
+      <UniqueIdentifier>{660c1055-b542-41a4-a73c-f847c6bb1e44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{8c49f125-4a87-4c15-963b-4270e83dcf19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Common">
+      <UniqueIdentifier>{aa52689a-0cc0-477e-975c-b04c6b7e42ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Settings">
+      <UniqueIdentifier>{2fd48260-149a-41ae-8b2a-5a098bd88c4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ParticleSettings">
+      <UniqueIdentifier>{25b50aff-c285-41a6-9223-92e854a25bbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Billboard">
+      <UniqueIdentifier>{1da3ef25-d357-4627-b68c-2e50fe58682d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\VoxelBlock">
+      <UniqueIdentifier>{0632ad4c-c069-4e6b-96b2-2c52b8a688a3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main_Win32.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TheApp.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="World.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameCommon.cpp">
+      <Filter>Game Common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TheApp.hpp">
+      <Filter>Main Files</Filter>
+    </ClInclude>
+    <ClInclude Include="World.hpp">
+      <Filter>Main Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCommon.hpp">
+      <Filter>Game Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Run_Win32\EngineSettings.ini">
+      <Filter>Settings</Filter>
+    </None>
+    <None Include="..\Run_Win32\shaders\voxel_fragment.glsl">
+      <Filter>Shaders\VoxelBlock</Filter>
+    </None>
+    <None Include="..\Run_Win32\shaders\voxel_geometry.glsl">
+      <Filter>Shaders\VoxelBlock</Filter>
+    </None>
+    <None Include="..\Run_Win32\shaders\voxel_vertex.glsl">
+      <Filter>Shaders\VoxelBlock</Filter>
+    </None>
+    <None Include="..\Run_Win32\shaders\particleBillboard_fragment.glsl">
+      <Filter>Shaders\Billboard</Filter>
+    </None>
+    <None Include="..\Run_Win32\shaders\particleBillboard_geometry.glsl">
+      <Filter>Shaders\Billboard</Filter>
+    </None>
+    <None Include="..\Run_Win32\shaders\particleBillboard_vertex.glsl">
+      <Filter>Shaders\Billboard</Filter>
+    </None>
+    <None Include="..\Run_Win32\data\particles\Butterfly.xml">
+      <Filter>ParticleSettings</Filter>
+    </None>
+    <None Include="..\Run_Win32\data\particles\Fire.xml">
+      <Filter>ParticleSettings</Filter>
+    </None>
+    <None Include="..\Run_Win32\data\particles\FireAni.xml">
+      <Filter>ParticleSettings</Filter>
+    </None>
+    <None Include="..\Run_Win32\data\particles\Inferno.xml">
+      <Filter>ParticleSettings</Filter>
+    </None>
+    <None Include="..\Run_Win32\data\particles\NES.xml">
+      <Filter>ParticleSettings</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Theme name="Spooky Theme">
+  <BaseWidgets>
+     <Base 
+      name="Base"
+      offset="0,0"
+      size="100,100"
+      bgcolor="196,0,255"
+      edgecolor="0,0,0"
+      edgethickness="5`.0"
+      opacity ="51.0"
+      />
+
+    <Button
+      name ="Button"
+      text="SPOOKYSTYLEBUTTON"
+      textscale="1.0"
+      textcolor="255,0,0"
+      textopacity="1.0">
+
+      <State
+        statename="highlighted"
+        bgcolor="255,0,255"
+      />
+
+
+
+    </Button>
+  </BaseWidgets>
+  
+  
+  
+  
+  
+</Theme>
